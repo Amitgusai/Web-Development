@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colors tutorial</title>
+
+    <!-- linking css file:  -->
+    <link rel="stylesheet" href="style-5.css">
+
+    <!-- 3. Method  -->
+    <style>
+        body{
+            color: black;
+        }
+    </style>
+
+    <!-- #ORDER PRECEDENCE
+    The one which is closest to the the element styled will be preferred. -->
+
+</head>
+<body>
+    <h1>Color types</h1>
+    <!-- HEX -->
+    <h2 style="color: #3898ed;">This is for HEX color</h2>
+
+    <!-- In above the value of color is in HEX value -->
+    <!-- We can also simply write the name of the color BUT every browser interpret differently to these words like: blue, red etc. -->
+    <!-- So, In Profesional life, we use HEX value , RGB (red,green,blue) and HSL . -->
+
+    <!-- RGB: combination of Red, Green and Blue  -->
+    <p>This is for RGB color with styling in seperate CSS file.</p> 
+
+    <!-- HSL: Hew, Saturation and Light -->
+    <h4 style="color: hsl(208, 83%, 57%);">This is for HSL color</h4>
+
+    <!-- Use of a: alpha : Transparency of colors -->
+    <h3 style="color: hsla(142, 92%, 20%, 50%);">This is for color styling</h3>
+     
+    
+    <!-- Different methods ot add styling 
+    1. Inline element
+    2. Seperate css file : we have to link it in Head 
+    3. In <head> we can use <style> style data  -->
+
+    <!-- #Important: These colors are useful when we apply condition to it
+            Ex: if (When the user in logged in show data in blue)
+                    else(show in red) -->
+
+    <p>
+
+        <!-- This shows content which is quoted from another source. -->
+        <!-- To mention that source we use cite attribute. -->
+
+        <blockquote cite="Amit">
+            This is an example of Block-quote tag.
+        </blockquote>
+
+        <q>
+            This is an example of q element [not preferred]
+        </q>
+
+        <!-- We can also use <q> element to quote content sourced from other BUT 
+            Preference: To use <blockquote> element - because <q> it automatically injects the quote and we usually prefer to do it with CSS to inject better. -->
+    <p>
+
+    <!-- Abbreviation: -  -->
+    <abbr title="hyper Text Markup language">HTML</abbr>
+
+                                                                    <!-- HOME-WORK -->
+
+    <h3>Contact or Address:  </h3>
+    <address>
+        <!-- This element indicates that the enclosed or wrapped html provides contact information of/for a person or organisation. -->
+
+        You can Contact the author: 
+        <a href="tel:+2983-4938-3849">2983-4938-3849</a>
+        <br>
+        If any queries E-mail: 
+        <a href="mailto:amitgusai2003@gmail.com">amitgusai2003@gamil.com</a>
+
+        <!-- It is typically written in the <footer> element if any or botton part in web page  -->
+
+    </address>
+
+    <!-- Citation Element  -->
+
+    <!-- To mention the reference of the source used in <blockquote> or <q> element -->
+    <p> Recently a book is trending on the internet. You can read it at 
+        <cite>
+            <a href="https://read.amazon.in/landing">Atomic Habits</a>
+        </cite> 
+        by James Thomas.
+    </p>
+    
+    <cite>This element is displays in italic format.</cite>
+
+                                                                    <!-- End  -->
+
+    <!-- Direction mention of displaying: as in used in Urdu form right to left. -->
+    <h4>Content display in direction _ right to left:</h4> 
+    <bdo dir="rtl">sundar gusai</bdo>
+
+
+
+</body>
+</html>
