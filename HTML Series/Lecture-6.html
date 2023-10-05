@@ -43,7 +43,17 @@
     <br>
     
     <!-- Relative URL -->
-    <img src="random.png" alt="Retalive URL">
+    <img src="randomT.png" alt="Retalive URL">
+
+    <!-- Another way to add Image:  -->
+    <!-- We use this method to control alternative versions of image to be displayed based on the screen pixel density, different devices, viewport size etc. -->
+    <picture>
+        <!-- media: True or false > if false_next line ke code evaluate karega -->
+        <source media="(min-width: 650px)" srcset="random.png">
+        <source media="(min-width: 400px)" srcset="randon2.png">
+        <img src="random.png" alt="Example of picture tag">
+        <!-- srcset attributes: Very Important  -->
+    </picture>
 
 
 
