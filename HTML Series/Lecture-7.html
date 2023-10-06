@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TABLE in Html</title>
+
+<!-- Some CSS applied to the table to display it better  -->
+    <Style>
+        table {
+        /* width: It can specify the size of table stretch or our web page */
+            width:70% ;
+        /* table has its own border: To better display we collapse it using:  */
+            border-collapse: collapse;
+        /* Data aligned at the center  */
+            text-align: center;
+        }
+        td, th {
+        /* border: margin add hue  */
+            border: 1px solid black ;
+            color: rgb(10, 10, 10);
+
+        }
+    /* :nth-child(): It implies that at only even place in table, :background color will be applied. */
+        tr:nth-child(even) {
+            background-color: #71c0fd;
+        }
+    </Style>
+
 </head>
 <body>
-    
+    <table> 
+        <!-- Emmet Abbreviation: table>tr>td*3  -->
+        <tr>                          <!--  <tr> This is a row for table: It acts as Table Row -->
+            <th>Country</th>             <!--  <th> This is a heading for table: It acts as Table Head -->
+            <th>Country code</th>
+            <th>Email</th>
+        </tr>
+        <tr>                           
+            <td>India</td>             <!-- This is data in the table: It acts as Table Column  -->
+            <td>IN</td>
+            <td>india@google.com</td>
+        </tr>
+        <tr>
+            <td>America</td>
+            <td>USA</td>
+            <td>America@google.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JP</td>
+            <td>Japan@google.com</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>CH</td>
+            <td>china@google.com</td>
+        </tr>
+
+        
+        <!-- 2nd Table  -->
+    <!-- Use of rowspan: Increasing no of row spaces [merge]
+        and column span: Increasing no of column spaces [merge] -->
+        <table style="width: 20%;" >
+            <tr>
+                <th colspan="3">Country</th>
+                <td rowspan="2">India</td>
+                <td>Japan</td>
+            </tr>
+            <tr>
+                <th>Code</th>
+                <td>5465464</td>
+                <td>4546546</td>
+                <td>china</td>
+                <td>america</td>
+
+            </tr>
+        </table>
+        
+    </table>
 </body>
 </html>
