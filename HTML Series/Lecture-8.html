@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List, Inline and Block Elements</title>
+</head>
+<body>
+    <h1>My List</h1>
+
+    <h2>Unordered list</h2>
+    <!-- Use in navigation bars or menu bars, footer etc. -->
+    <!-- Non-Sequencial or Randon order  -->
+    <ul>
+        <li>1</li>
+        <!-- Nested List -->
+        <li>
+            <ol>
+                <li>amit</li>
+                <li>gusai</li>
+            </ol>
+        </li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <h2>Ordered list</h2>
+    <!-- Type attributes to change the display numbering -->
+    <!-- Sequencial Order  -->
+    <ol type="A">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ol>
+
+    <h2>Description List</h2>
+    <!-- This is not majorly used but good to know -->
+    <dl>
+        <dt>Name: </dt>
+            <dd>Amit Gusai</dd>
+        <dt>Religion: </dt>
+            <dd>Hindu</dd> 
+    </dl>
+    
+    <!-- To Check: which element is block or inline : use inspect in web page or add <style> = " background color: ________ " .  -->
+    <h2>Block-level and Inline-level Element</h2>
+    <!-- Block-level Element: -
+    1. It occupies the entire horizontal space of its parent entity.
+    2. It always start on a new line -->
+    <h3>Test 1</h3>
+    <p style="background-color: rgb(250, 250, 71);">Test 2</p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta asperiores et ipsa, quod 
+    <!-- Inline-level Element: -
+    1. It occupies the exact space as it content length.
+    2. It does not start on a new line. -->
+        <span style="background-color: rgb(70, 216, 253);">Inline-level</span> 
+        corporis.
+    </p>
+
+    <!-- Here, we can see <p> and <h1> element are Block-level element.
+    and   <span> is an Inline-level element. -->
+
+
+</body>
+</html>
