@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: rgb(137, 8, 211);
+            color: hsl(60, 100%, 50%);
+        }
+        a {
+            color: rgb(18, 225, 225);
+        }
+    </style>
+</head>
+<body>
+    <!-- Form is a method to take input from the user  -->
+     <h1>Forms in HTML</h1>
+     <form action="URL" method="GET">
+
+        <!-- All the elements input in the form submit in the form of bundles in the server alltogether and given to backend. -->
+
+        <!-- In 'action' attribute: Defines the URL processing the form submission -->
+
+        <!-- 'Method' in which the form the info should be submitted to the server: 
+            Mostly we use 'post' method as: In this our form submits in an encrypted format. --> 
+
+        <!-- Method types: 
+        1. post : It submits in encrypted format.
+        2. get : It submits in textual format and also shown in action url separated by '?'
+        3. dialog : It submits when the form is in 'dialog' element >>> It can be replaced by 'button' tag and 'input' tag button -->
+
+        <!-- Use of Placeholder -->
+        <input type="text" placeholder="Example" id="">
+
+
+        <!-- 'Placeholder' shows blur text on the form box -->
+
+        <br>
+        
+        <!-- Generally we always use <label for=""></label> element with input  -->
+
+        <!-- Why? -->
+
+        <!-- Some ScreenReader may not read placeholder so, to connect and also provide details of our input box's content, we use 'label' tag -->
+
+        <label for="link">First Name: </label>
+        <input type="text" name="" id="link">
+
+        <!-- 'for' attributes tells about which input tag our label is linked with  -->
+
+    <!-- IMP -->
+        <!-- 'for' and 'id' attribute helps in linking input and label  -->
+
+        <br>
+
+        <label for="last">Last Name: </label>
+        <input type="text" name="" id="last">
+
+        <br>
+
+        <button type="submit">Pay</button>
+        <!--Creates a button box to submit our form-->
+
+     </form>
+
+    <h2>Important Explaination of Attibutes of FORM</h2>
+        <form action="" method="get" accept-charset="" autocomplete="off" enctype="" ></form>
+
+        <!-- 'accept-charset': which character set are we accepting [english, hingi, UTF-8, UTF-16 etc] -->
+
+        <!-- 'autocomplete': used for sensitive information we can turn off auto-complete suggestions and autocomplete entries -->
+
+    <!-- IMP -->
+        <!-- 'enctype': It defines the encoding type:  -->
+        <!-- 1. text/plain: Images cannot be added 
+        2. application/x-www-form-urlencoded: The default format
+        3. multipart/form-data: In this Images can also be added. EX: - Browse option to upload image on our web page. -->
+
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">URL: FORMS's attributes</a>
+
+</body>
+</html>
