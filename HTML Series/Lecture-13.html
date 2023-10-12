@@ -31,6 +31,16 @@
 
     <br>
 
+    <!-- The <input type="hidden"> defines a hidden input field (not visible to a user). -->
+    <input type="hidden" name="">
+    <!-- A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
+
+    A hidden field often stores what database record that needs to be updated when the form is submitted.
+
+    Note: While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security! -->
+
+    <br>
+
     <!-- <Select> always used with option tag to select in scrolling format and <option> element to provide option  -->
     <select name="editors" id="">
         <option value="vscode">vscode</option>
@@ -51,15 +61,23 @@
         <li>File</li>
         <li>Password</li>
         <li>Radio</li>
-        <li>Range</li>
-        <li>Colors</li>
+        <li>
+             <!-- Use of max and min to define restrictions -->
+            <label for="link">Volume</label>
+            <input type="range" name="" id="link" min="10" max="100">
+        </li>         
+        <li>
+             <!-- Used for input field that should contain Colors -->
+            <label for="color">Pick a Color: </label>
+            <input type="color" name="" id="color">
+        </li>        
         <li>Email</li>
         <li>Checkmarks</li>
     </ul>
     
     <p>
         Learning about Input Tags: 
-        <a href="">W3 school</a>
+        <a href="https://www.w3schools.com/html/html_form_input_types.asp">W3 school</a>
     </p>
 
 </body>
