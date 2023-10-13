@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media and APIs</title>
+</head>
+<body>
+
+    <h1>MEDIA in HTML</h1>
+    <h2>Video and Audio</h2>
+    <!-- The main difference between <video> and <iframe> elements is that : -->
+
+        <!-- In <video>, Videos are already in the same server as our html Document -->
+
+        <!-- In <iframe>, it means opening a window for displaying a third party video 
+        We are only giving a frame without load in our server -->
+    <video src=""></video> 
+
+    <!-- OR  -->
+
+    <video width="400" height="300" controls muted autoplay>    
+        <source src="./ExampleVideo.mp4">
+    </video>
+    <!-- We have to use height and width attributes in video element  -->
+    <!-- If we want to customize the changes in video controls, Javascript is used -->
+
+<!-- Important -->
+    <!-- Live Server will only see the files loaded in the directory. Outside like in the deskstop it doesn't have access to it. -->
+    <h2>'Controls' Attribute : Important</h2>
+    <!-- 'controls' - Most important when handling media in html only  -->
+
+    <audio src="">    </audio>
+
+    <h3>APIs</h3>
+    <p>Note: HTML does not have any type of access to APIs</p>
+    <p>WE declare in HTML but its implementation can only be possible using JAVASCRIPT</p> 
+</body>
+</html>
