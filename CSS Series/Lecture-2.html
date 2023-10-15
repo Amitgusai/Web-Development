@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts and Colors</title>
+
+<!-- Google Fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"   rel="stylesheet"> 
+
+    <!-- Internal CSS for teaching beginning -->
+    <style>
+        .RGB {
+
+        /* Specifying style  */
+            font-style: italic;
+        /* Specifying font size  */
+            font-size: 20px;
+        /* Specifying font iteration  */
+            font-family: cursive;
+        /* Specifying thickness of font  */
+            font-weight: 200;
+        /* Defining gaps in between lines  */
+            line-height: 100px;
+
+        /* RGB color  */
+            background-color: rgba(90, 243, 243,0);
+        /* a : alpha is defining the transparency of color  */
+        }
+
+        .HSL {
+        /* Fall Back system: If 1 font doesn't work then try another and so on  */
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+        /* These are Universely available in our browser */
+            background-color: hsl(30, 91%, 67%);
+        }
+
+        .HEx {
+        
+        /* To use External fonts in CSS  */
+            /* Go to Google Fonts  */
+                /* Copy link URL and font-family  */
+                    /* Paste link in head tag and paste font-family in style  */
+            font-family: 'Bebas Neue', sans-serif;
+
+            background-color: #00ff91;
+        }
+
+        .normal {
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Fonts and Colors</h1>
+
+    <p class="RGB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fugit earum soluta repudiandae illo exercitationem magnam dicta tempore, vitae corrupti deleniti sed quae, officia atque magni ipsum non quas libero.</p>
+
+    <p class="HSL">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate temporibus distinctio laudantium numquam at quam itaque, corporis odit rem quos veniam eum. Molestiae.</p>
+
+    <p class="HEx">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptate hic doloremque animi illum numquam iure perferendis explicabo distinctio fuga odio aliquam est, vitae architecto minus error tempore? Quae nostrum modi dolorum amet ea ipsa commodi esse repellendus eaque perferendis?</p>
+
+    <p class="normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dicta, molestias voluptas nisi, iste eaque consequuntur recusandae saepe veritatis, obcaecati quibusdam possimus adipisci assumenda unde? In, dolorem ipsam quis dignissimos fugiat quae aspernatur.</p>
+
+    <p>For defining the transperancy of the colors we use: <br>
+    '4th' parameter in colors named : "alpha" </p>
+</body>
+</html>
