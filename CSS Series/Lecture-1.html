@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Basics</title>
+
+    <!-- Ordering matters  -->
+
+<!-- External CSS  -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+<!-- Internal CSS  -->
+    <style>
+        /* Selectors : A way to target a html element and style it  */
+        p {
+            
+            background-color: rgb(87, 225, 253) ;  /* !important */
+            /* important flag will be top priority */
+        }
+    </style>
+
+<!-- External CSS  --> 
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <h1>CSS Elements</h1>
+
+    <!-- Inline CSS -->
+    <p style="background-color: yellow;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eius cupiditate nihil libero doloribus sint consequatur excepturi, quisquam veritatis natus.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusantium aut tempora praesentium nihil. Molestiae veniam labore quisquam sed consectetur ducimus tenetur esse doloremque accusamus, dicta ullam perspiciatis id harum.
+    </p>
+
+    <p class="external">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique quidem illum amet ex nihil, placeat, dolor numquam id aliquam temporibus nisi iure ab asperiores recusandae voluptatem neque ducimus! Nisi, veritatis beatae ab corrupti quo excepturi commodi et magni aliquam nesciunt atque iste at ipsam perspiciatis consectetur. Veniam, placeat quibusdam.
+    </p>
+
+    <!-- Order of Precedence -->
+    <!-- Order in which External and Internal CSS are placed in closer to <P> tag will be applied -->
+    <p style="background-color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dignissimos nulla at consequuntur tempora voluptatum maiores odit quae vel officiis accusamus dolorum accusantium nisi veritatis, corporis nesciunt earum rem quidem!</p>
+
+    <footer class="external">
+        This is example of class selector
+    </footer>
+
+    <h1>Order of Precedence</h1>
+
+    <div>
+        <ol>
+            <li>'!' -- Important flag</li>
+            <li>Specificity of selectors <br>
+                Inline >> id >> class >> tags
+            </li>
+            <li>
+                Order in the file [closest one will be preferred] <br>
+                Inline >> Internal >> External 
+            </li>
+            <li>
+                Intenal and External order matters whichever is closer be applied.
+            </li>
+        </ol>
+    </div>
+    
+    
+
+
 </body>
 </html>
