@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box-Model</title>
+    <title>Display Property</title>
+    <style>
+        * {
+            margin: 0 ;
+            padding: 0 ;
+        }
+        .box {
+            border: solid rgb(192, 35, 35) 2px;
+            width: 350px;
+            height: 300px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+        div {
+            border: solid rgb(192, 35, 35) 2px;
+            width: 350px;
+            height: 300px;
+            margin: 20px;
+        /* Combination of block and inline:  */
+            display: inline-block;
+        /* This will behave as a inline element but CUSTOM width and height is added */
+        }
+
+        span {
+            border: solid blue 2px;
+            width: 300px;
+            height: 150px;
+        /* Margin Only in horizontal me apply hoga margin  */
+            margin: 20px; 
+            padding: 70px;
+        /* Inline to block conversion:  */
+            display: block ;
+        }
+
+        #id {
+            border: solid rgb(192, 35, 35) 2px;
+            width: 350px;
+            height: 300px;
+            margin: 20px;
+        /* Block to Inline conversion:  */
+            display: inline;
+
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Box-Model</h1>
+    <h1>Display Property</h1>
+
+    <div class="box"><h1>Block element</h1> <br>
+        New line <br>
+        space taken: Extreme left to Extreme right <br>
+        It respects CUSTOM: <br>
+        1. width <br>
+        2. height <br>
+        3. padding <br>
+        4. margin 
+    </div>
+
+    <div>New line <br>
+        <h1>Box-sizing-border-Box</h1>
+        WithOut Box-sizing-Border-Box: <br>
+        The actual width of the box will be increased <br>
+        <h1>BUT</h1>
+        With Box-sizing-border-box: <br>
+        The content box will shrink without effecting the actual size of the Box
+    </div>
+
+    <!-- Conversion from inline to block: display: block ;
+    Conversion from block to inline: display: inline ; -->
+
+    <span><h1>Inline Element</h1>Same line and does not respect: custom width and height    ///    It respect: custom padding and only horixontal margin </span>
+
+    <div id="id">Conversion of BLOCK to INLINE ELEMENT</div>
+    
+    
+
+    
+
 </body>
 </html>
