@@ -6,17 +6,29 @@
     <title>Box-Model</title>
 
     <style>
+
+        /* Universal Selector */
+        * {
+            padding: 0 ;
+            margin: 0 ;
+        }
         
         h1{
-            
             background-color: rgb(104, 104, 252);
             border-style: solid;          /*  To give border  */
-            border-width: 2px;
+            border-width: 4px;
             border-color: rgb(250, 5, 5);
         /* width  */
-            width: 350px ;
-            height: 200px;
+            width: 400px ;
+            /* height: 200px; */
+        /* The gap between two boxes is margin  */    
+            margin: 70px;
+        /* The gap between the content and the border is padding */
+            padding: 50px;
+
         }
+
+
         .firstPara{
             background-color: bisque;
         /*  Short hand Notation: ek hi field ke andar multiple properties assign */
@@ -26,19 +38,25 @@
         /* For Specific */
             border-top-right-radius: 50px;
             width: 350px ;
-            height: 200px;
+            /* height: 200px; */
+        /* ShortHand Notation:  */
+            padding: 60px 0 40px 150px;
         }
         .secondPara{
             background-color: rgb(116, 243, 243);
             border-top: solid 5px rgb(3, 24, 108) ;
             width: 350px ;
             height: 200px;
+            padding:0;
+            
+            
         }
         .thirdPara{
             background-color: rgb(250, 154, 250) ;
-            border: solid 2px rgb(253, 15, 15);
+            border: solid 2px #fd0f0f;
             width: 350px ;
-            height: 200px;
+            height: 200px;     
+        
         }
 
         span {
@@ -60,7 +78,16 @@
 
     <p class="secondPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vero suscipit mollitia rem reiciendis sapiente, corporis reprehenderit? Perspiciatis voluptates fuga, laudantium reiciendis rem sequi voluptatum repellat vitae itaque, eveniet minima aperiam molestias, dolorum ipsum qui! Eveniet aperiam ullam nemo animi!</p>
 
-    <p class="thirdPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore a aspernatur voluptatum doloribus ipsum culpa consequatur et rem aperiam molestias?</p>
+    <p>Box-Model: Not matter what the shape of the content, everything will be wrapped with retangular box.</p>
+
+    <p class="thirdPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur atque, quo iste dignissimos animi molestiae. Ea, autem corporis. Nulla eligendi provident et culpa, ex quisquam. Et, numquam nisi. Asperiores veniam, corrupti deleniti quibusdam excepturi, accusantium, repellat error placeat magnam animi quam. Ipsa possimus aperiam provident magnam repellendus deleniti veniam dignissimos!
+    </p>
+
+
+    <h2>Best Practive:</h2>
+    <p>By default: choose padding and margin as 0</p>
+    <h3>Universal Selector </h3> 
+    <p>Applying property to each and every tag</p>
 
 </body>
 </html>
