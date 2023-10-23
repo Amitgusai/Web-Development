@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position Property</title>
+
+    <style>
+        .container {
+            border: solid rgb(82, 8, 242) 5px;
+            height: 3000px;
+            background-color: beige;
+        }
+
+        .container2 {
+            background-color: rgb(180, 114, 242);
+            height: 2000px ;
+        }
+        img {
+        /* Static Position : By Default : Nothing changes */
+            margin: 10px;
+        }
+
+        .image1 {
+        /* Sticky Position : Differenece:  */
+        /* Fixed : With ke hisab se position hai fixed hai ;  */
+        /* Sticky : Apni Closest Parent entity ke hisab se positioned hai */
+            position: sticky ;
+            top: 100px;
+        /* Example : CodeHelp */
+
+        }
+
+        .image2 {
+        /* Relative Position : Current Window ke relative and
+        Initial space will be intact  */
+            /* position: relative; */
+            top: 100px;
+            left: 100px ;
+        }
+
+        .image3 {
+        /* Absolute Position : Closest Parent Entity/Tag ke relative 
+        Used for Overlapping    */
+        /* image3 ne image4 ko OVERLAP   */
+        /* Initial space nahi hota as well as gap is not maintained  */
+            /* position: absolute; */
+        }
+
+        .image4 {
+        /* Fixed Position : Image web page me fixed rahegi */
+            position: fixed ;
+            
+        }
+
+    </style>
+
 </head>
 <body>
     <h1>Position Property</h1>
+
+    <div class="container">
+
+        <img src="download (1).jpeg" 
+             alt="Poster 2" 
+             width="345 × 234 px"
+             class="image1"
+        />
+
+        <img src="download (2).jpeg" 
+             alt="Poster 3" 
+             width="345 × 234 px"
+             class="image2"
+        />
+
+        <img src="download (3).jpeg" 
+             alt="poster 1 "
+             width="345px"
+             height="193px"
+             class="image3"
+        />
+
+        <img src="images.jpeg" 
+             alt="Poster 4" 
+             width="345 × 234 px"
+             class="image4"
+        />
+
+    </div>
+
+    <div class="container2"></div>
+
 </body>
 </html>
