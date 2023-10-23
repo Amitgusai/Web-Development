@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS size-Units</title>
+
+    <style>
+        /* div {
+            border: solid 3px red;
+            width: 50%;
+        } */
+
+        p {
+            color: white;
+        }
+
+        .parent {
+            background-color: aqua;
+        /* viewport-height */
+            height: 100vh ; 
+        /* viewport-width */
+            width: 50vw;
+        }
+        
+        .child {
+            background-color: rgb(72, 72, 238);
+        /* Parent ke div me child ka div overlap kardiya */
+        /* Here '%' means : 20% of its parent entity  */
+            width: 50%;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Size Units : For clarity</h1>
+    <div class="parent">
+        <div class="child">
+            <p>Welcome to Web Development</p>
+        </div>
+    </div>
+
+    <!-- Pixel : 1/96th of an inch -->
+    <!-- PPI : quality of a digital image  -->
+    <!-- DPI :  quality of an printed or physical image --> 
+
+    <!-- physical pixels : actual number of dots/element of light within an inch  -->
+    <!-- logical pixels : just Information about location of pixel  -->
+</body>
+</html>
