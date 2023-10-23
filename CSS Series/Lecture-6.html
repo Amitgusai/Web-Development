@@ -29,7 +29,22 @@
         /* Here '%' means : 20% of its parent entity  */
             width: 50%;
         }
-    </style>
+
+        .em_rem {
+            font-size: 10px;
+        }
+
+        .box {
+        /* em : It is a font size unit and relative to its parent entity size  */
+            font-size: 10em ;
+        }
+
+        .rem_example {
+        /* rem : It depend or relative to the root element size  */
+            font-size: 5rem;
+        }
+
+    </style> 
 
 </head>
 <body>
@@ -40,11 +55,22 @@
         </div>
     </div>
 
+
     <!-- Pixel : 1/96th of an inch -->
     <!-- PPI : quality of a digital image  -->
     <!-- DPI :  quality of an printed or physical image --> 
 
     <!-- physical pixels : actual number of dots/element of light within an inch  -->
     <!-- logical pixels : just Information about location of pixel  -->
+
+    <h1 class="rem_example">
+        Hello Web-Dev
+    </h1>
+
+    <div class="em_rem">
+        <div class="box">
+            Welcome to Example
+        </div>
+    </div>
 </body>
 </html>
