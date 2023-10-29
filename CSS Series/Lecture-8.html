@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexBox</title>
+
+    <style>
+        .container {
+            background-color: rgb(35, 246, 165);
+            border: 1px solid black;
+            height: 1000px;
+    /* To display a container as flex */
+            display: flex;
+        /* By default flex direction is row  */
+            flex-direction: row;
+    /* To prevent width from squeezing until space is available */
+            /* flex-wrap: wrap;     */
+
+    /* Justify-content Property : Positioning content according to the main-axis */
+        /* If flex-direction: row : Horizontally */
+        /* If flex-direction: column : Vertically */
+
+            /* justify-content: center;  */
+            /* start and end ; */
+
+        /* Equal space between the flex items: boxes  */
+            /* justify-content: space-between; */
+        /* Equal spacing around [left and right] the flex items : boxes  */
+            /* justify-content: space-around; */
+        /* Equal spacing all over the display  */
+            /* justify-content: space-evenly; */
+
+    /* Align-items: Positioning according to the cross-section */
+        /* If flex-direction: row : Vertically */
+        /* If flex-direction: column : Horizontally */
+
+        /* To display in center of the web page  */
+            align-items: start;
+            justify-content: start; 
+        /* To stretch in the web page  */
+            /* align-items: stretch; */
+            
+    /* When we apply wrap and we want to handle the multiple lines of spaces between the content :  */
+            align-content: center;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 5px;
+        /* Created flex Container  */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #box1 {
+            background-color: bisque;
+        /* To increase the speed of growth of a flex-item :  */
+        /* It takes all the remaining space available  */
+            /* flex-grow: 4; */
+        }
+        #box2 {
+            background-color: aquamarine;
+        /* To increase the speed of shrinking when wrap is not applied */
+            flex-shrink: 3;
+        }   
+        #box3 {
+            background-color: blueviolet;
+            order: -1;
+        /* To control/set the dimension of a flex item  */
+            flex-basis: 500px ;
+    /* Short hand Notation :  */
+        /* flex: grow , shrink , basis ;  */
+        }   
+        #box4 {
+            background-color: blue;
+        /* To change the sequence of our flex items  */
+            order: -2;
+        /* To align a flex-item by itself : */
+            align-self: center;
+        /* By Default Or flex-direction: row : In Cross-axis : Vertically */
+        /* If flex-direction: column : Horixontally */
+        }
+    </style>
+
 </head>
 <body>
     <h1>FLEXBOX : 1-D Layout || Learning with a Game</h1>
-    
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
 </body>
 </html>
