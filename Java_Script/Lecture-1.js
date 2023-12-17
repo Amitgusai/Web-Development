@@ -8,6 +8,7 @@ let Account_name = "Amit Gusai"
 Account_state = "Uttarakhand" 
 
 // It will show undefined as it not a defined variable 
+// Yet hasn't assinged any Value to the Variable
 let Account_pin 
 
 // To print 
