@@ -20,7 +20,7 @@ let password ; // Undefined => It a 'type' in itself
 // BigInt => For big values like in Stock Market
 // Null => Standalone Value (a Object)
 
-
+// The `typeof` operator is used to determine the type of a value or variable in JavaScript.
 console.log(typeof Box)
 console.log(password)
 console.log(typeof password);
