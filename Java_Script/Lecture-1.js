@@ -1,1 +1,4 @@
-console.log("hello world")
+console.log("Journey to start learning JavaScript")
+
+
+
