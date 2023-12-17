@@ -1,4 +1,4 @@
-// Used to declare a non-changeable Variable
+// Used to declare a Variable which will be UN-changeable
 const Account_Id = 221022126461
 // Scope is not defined in this 'var' case
 var Account_city = "Almora" 
