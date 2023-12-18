@@ -16,8 +16,9 @@ let logged_in = false // Boolean
 let decimal = 2.3 // Float
 let Box = null // null => Empty ( a value , not a 0 )
 let password ; // Undefined => It a 'type' in itself
+// No value is assigned
 
-// BigInt => For big values like in Stock Market
+// BigInt => For big values, like in Stock Market
 // Null => Standalone Value (a Object)
 
 // The `typeof` operator is used to determine the type of a value or variable in JavaScript.
