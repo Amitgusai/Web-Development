@@ -2,23 +2,24 @@
 let score = 23
 
 let inScore = String(score)
-console.log(inScore);
 console.log(typeof inScore)
+console.log(inScore);
 
 // Number
 let isLoggedIn = "89Amit"
 
 let isLoggedIn_2 = Number(isLoggedIn)
-console.log(isLoggedIn_2)
 console.log(typeof isLoggedIn_2)
+console.log(isLoggedIn_2)
 
 // Nan => Not a Number 
 // The type of NaN is a 'Number'
+// Conversion of a 'String' to a 'Number' is a little Confusing
 // In javascript, sometimes Conversion happens, sometimes the actual value doesn't change as above Example
 
 
 // Boolean
-let ans = 0
+let ans = 1
 
 let ans_1 = Boolean(ans)
 console.log(typeof ans_1)
@@ -27,8 +28,8 @@ console.log(ans_1)
 // Experiment
 let Empty = undefined 
 let Empty_1 = null
-let Empty_2 = "filled string" 
-let Empty_3 = "" // Empty String
+let Empty_2 = "" // Empty String
+let Empty_3 = "filled string" 
 
 // This can be changed into any "data type" conversion 
 let Empty_num = Number(Empty_3)
@@ -37,11 +38,17 @@ console.log(Empty_num)
 
 // RESULT :-
 
-// undefined => NaN 
-// null => 0
-// "" => Empty_String - 0
-// "filled string" => NaN
+// NUMBER data type :-
+                        // undefined => NaN 
+                        // null => 0
+                        // "" => Empty_String - 0
+                        // "filled string" => NaN
 
+// Boolean data type :- 
+                        // undefined => false
+                        // null => false
+                        // "" => false
+                        // "filled String" => true
 
 
 
