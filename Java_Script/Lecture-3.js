@@ -2,15 +2,15 @@
 let score = 23
 
 let inScore = String(score)
-console.log(typeof inScore)
-console.log(inScore);
+// console.log(typeof inScore)
+// console.log(inScore);
 
 // Number
 let isLoggedIn = "89Amit"
 
 let isLoggedIn_2 = Number(isLoggedIn)
-console.log(typeof isLoggedIn_2)
-console.log(isLoggedIn_2)
+// console.log(typeof isLoggedIn_2)
+// console.log(isLoggedIn_2)
 
 // Nan => Not a Number 
 // The type of NaN is a 'Number'
@@ -22,17 +22,17 @@ console.log(isLoggedIn_2)
 let ans = 1
 
 let ans_1 = Boolean(ans)
-console.log(typeof ans_1)
-console.log(ans_1)
+// console.log(typeof ans_1)
+// console.log(ans_1)
 
 // Experiment
-let Empty = undefined 
-let Empty_1 = null
-let Empty_2 = "" // Empty String
-let Empty_3 = "filled string" 
+let Empty_1 = undefined 
+let Empty_2 = null
+let Empty_3 = "" // Empty String
+let Empty_4 = "filled string" 
 
 // This can be changed into any "data type" conversion 
-let Empty_num = Number(Empty_3)
+let Empty_num = Number(Empty_1)
 console.log(typeof Empty_num)
 console.log(Empty_num)
 
