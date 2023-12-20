@@ -12,10 +12,10 @@ let isLoggedIn_2 = Number(isLoggedIn)
 // console.log(typeof isLoggedIn_2)
 // console.log(isLoggedIn_2)
 
-// Nan => Not a Number 
+// 'Nan' => Not a Number 
 // The type of NaN is a 'Number'
+// In javascript, This will convert into a type 'Number' but it is not actually a Number, only a type change (NaN)
 // Conversion of a 'String' to a 'Number' is a little Confusing
-// In javascript, sometimes Conversion happens, sometimes the actual value doesn't change as above Example
 
 
 // Boolean
