@@ -26,6 +26,8 @@ let ans_1 = Boolean(ans)
 // console.log(ans_1)
 
 // Experiment
+/* The code is demonstrating the conversion of different values into the Number data type using the
+Number() function. */
 let Empty_1 = undefined 
 let Empty_2 = null
 let Empty_3 = "" // Empty String
