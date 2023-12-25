@@ -8,11 +8,12 @@ h5 {
 }
 
 form {
-    text-align: center;
-    border: 1px solid white;
+    border: 1px solid rgb(243, 244, 246);
     padding: 40px;
+    width: 800px;
     margin: 0 200px ;
     background-color: rgb(31, 25, 25);
+    text-align: center;
 }
 
 body {
@@ -33,22 +34,22 @@ h2 {
 }
 
 main {
-    text-align: left;
+    text-align: center;
     padding: 5px;
     border: 1px solid white;
     padding: 20px;
     margin: 20px;
 }
 
-.customer {
+/* .customer {
     font-size: small;
-}
+} */
 
 input[type*='text'] {
     width: 500px;
     height: 50px;
     margin: 5px;
-    font-size: large;
+    font-size: 25px;
     font-family: bold;
     background-color: rgb(31, 25, 25);
     border: 1px solid white;
@@ -79,8 +80,9 @@ select[name*='country'] {
     color: white;
 }
 
-div {
+div{
     padding: 10px;
+    font-size: small;
 }
 
 
