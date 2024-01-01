@@ -1,32 +1,29 @@
+// To standarsize the code to the newer version of JavaScript
+"Use Strict" 
 
+// It has a different SYNTAX for 'alert' in Node.js
+// alert ( 9 + 9 ) 
 
-//          ********    Basic Conversion - SAME Data Types  ********
+// Code Readability is a very IMPORTANT 
 
-// console.log(5 < 10);
-// console.log(5 > 10);
-// console.log(5 <= 10);
-// console.log(5 >= 10);
-// console.log(5 == 10);
-// console.log(5 === 10);
+// DOCUMENT: - MDN and [ ec39 - Standard is defined in this ]
 
+// Data Types : - 
 
-//          *********   DIFFERENT Data types    **************
-// console.log("3" < 2);
-// console.log("3" > 2);
-// Conversion to 'number' happens
+let name = "amit" // String
+let age = 34 // Number
+let logged_in = false // Boolean
+let decimal = 2.3 // Float
+let Box = null // null => Empty ( a value , not a 0 )
+let password ; // Undefined => It a 'type' in itself
+// No value is assigned
 
-//          *********    Confusion [AVOID] *************
+// BigInt => For big values, like in Stock Market
+// Null => Standalone Value (a Object)
 
-console.log(null > 0);
-console.log(null == 0);
-console.log(null >= 0);     // change
-// The reason for different output is than an equality check ++ and comparison > < >= <= work differently
-// Comparison convert null to a number, treating it as 0.
-
-// '===' - It strictly check whether the comparison is between same data types or not.
-console.log("0" === 0);
-
-
-
+// The `typeof` operator is used to determine the type of a value or variable in JavaScript.
+console.log(typeof Box)
+console.log(password)
+console.log(typeof password);
 
 

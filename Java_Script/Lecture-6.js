@@ -1,56 +1,54 @@
+// String
+let score = 23
 
-//          ***************************************         REVISION            ***********************************
+let inScore = String(score)
+// console.log(typeof inScore)
+// console.log(inScore);
 
+// Number
+let isLoggedIn = "89Amit"
 
-// Data types : Differentiate on the bases of How they are stored in memory and how they can be accessed.
+let isLoggedIn_2 = Number(isLoggedIn)
+// console.log(typeof isLoggedIn_2)
+// console.log(isLoggedIn_2)
 
-// Primitive:- They are a copy of actual data in memory -- Call by value
-
-// 7 types: - String, Number, Boolean, Un-defined, null, Symbol(to make a value unique), BigInt(big value).
-
-const score = 100.45
-
-const isloggedin =  false
-const outsideTemp = null
-
-//                              *************        Example         ************
-
-// Symbol (Mostly used in react[library])   {UNIQUE VALUE}
-const id = Symbol("124")
-const address = Symbol("124")
-// Even if the value is same, the result of id and address will be different. 
-console.log(id === address);
-
-// BigInt - use of n at last
-const big = 5456512321516516513215654523121651651n
-console.log(typeof big);
-
-// Is JacaScript a dynamically typed language or static language?
-// If data type(safety) needs to be specified then it is static otherwise dynamic language.
+// 'Nan' => Not a Number 
+// The type of NaN is a 'Number'
+// In javascript, This will convert into a type 'Number' but it is not actually a Number, only a type change (NaN)
+// Conversion of a 'String' to a 'Number' is a little Confusing
 
 
-// Non-Primitive (Reference type) :- Call by Reference
+// Boolean
+let ans = 1
 
-// Array, Object, Functions
+let ans_1 = Boolean(ans)
+// console.log(typeof ans_1)
+// console.log(ans_1)
 
-const array = ["amit", "rahul", "anjali"]
+// Experiment
+/* The code is demonstrating the conversion of different values into the Number data type using the
+Number() function. */
+let Empty_1 = undefined 
+let Empty_2 = null
+let Empty_3 = "" // Empty String
+let Empty_4 = "filled string" 
 
-let object = {    // all inside the curly braces is Object
-    // key:value pair 
-    
-    name: "amit",
-    age: 20,
-    family: "gusai",
-}
+// This can be changed into any "data type" conversion 
+let Empty_num = Number(Empty_1)
+console.log(typeof Empty_num)
+console.log(Empty_num)
 
-const myFunction = function(){
-    console.log("This is a function");
-}
+// RESULT :-
 
-// data type of non-primitive are all object (typeof _)
-// data type of function is called Function Object.
+// NUMBER data type :-
+                        // undefined => NaN 
+                        // null => 0
+                        // "" => Empty_String - 0
+                        // "filled string" => NaN
 
-console.log(typeof myFunction);
-
-// To Master JacaScript :- master objects and  master browser Event. 
+// Boolean data type :- 
+                        // undefined => false
+                        // null => false
+                        // "" => false
+                        // "filled String" => true
 
