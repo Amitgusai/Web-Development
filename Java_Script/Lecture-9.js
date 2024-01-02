@@ -17,9 +17,9 @@ const outsideTemp = null
 
 // Symbol (Mostly used in react[library])   {UNIQUE VALUE}
 const id = Symbol("124")
-const address = Symbol("124")
+const anotherId = Symbol("124")
 // Even if the value is same, the result of id and address will be different. 
-console.log(id === address);
+console.log(id === anotherId);
 
 // BigInt - use of n at last
 const big = 5456512321516516513215654523121651651n
@@ -52,5 +52,5 @@ const myFunction = function(){
 
 console.log(typeof myFunction);
 
-// To Master JacaScript :- master objects and  master browser Event. 
+// To Master JacaScript :- master objects and  master browser Events. 
 
