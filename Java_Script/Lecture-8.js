@@ -25,8 +25,3 @@ console.log(null >= 0);     // change
 
 // '===' - It strictly check whether the comparison is between same data types or not.
 console.log("0" === 0);
-
-
-
-
-
